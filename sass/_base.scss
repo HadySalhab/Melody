@@ -25,3 +25,10 @@ li {
 html {
 	font-size: 62.5%;
 }
+
+.container {
+	max-width: 1300px;
+	margin: auto;
+	padding: 0 2rem;
+	overflow: hidden;
+}

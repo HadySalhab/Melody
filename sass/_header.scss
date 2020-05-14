@@ -15,9 +15,34 @@
 	&__content {
 		position: absolute;
 		z-index: 10;
-		top: 40%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		text-align: center;
+
+		&--main {
+			top: 40%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+		&--sub {
+			bottom: 0%;
+			left: 0%;
+			width: 100%;
+			background-color: $color-primary;
+			padding: 2.5rem 0;
+
+			.container {
+				align-items: center;
+				display: flex;
+
+				div {
+					flex-grow: 1;
+					font-size: 1.6rem;
+
+					p {
+						max-width: 50%;
+						margin-left: 10rem;
+					}
+				}
+			}
+		}
 	}
 }

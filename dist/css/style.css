@@ -14,6 +14,12 @@ li {
 html {
   font-size: 62.5%; }
 
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -51,6 +57,10 @@ body {
   text-align: center;
   letter-spacing: 0.5rem; }
 
+.heading-tertiary {
+  font-size: 4rem;
+  font-weight: 400; }
+
 .heading-quarternary {
   color: #fff;
   font-size: 3rem;
@@ -72,11 +82,27 @@ body {
     background: rgba(0, 0, 0, 0.6); }
   .header__content {
     position: absolute;
-    z-index: 10;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
+    z-index: 10; }
+    .header__content--main {
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center; }
+    .header__content--sub {
+      bottom: 0%;
+      left: 0%;
+      width: 100%;
+      background-color: #93cb52;
+      padding: 2.5rem 0; }
+      .header__content--sub .container {
+        align-items: center;
+        display: flex; }
+        .header__content--sub .container div {
+          flex-grow: 1;
+          font-size: 1.6rem; }
+          .header__content--sub .container div p {
+            max-width: 50%;
+            margin-left: 10rem; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -102,3 +128,7 @@ body {
 .btn--primary {
   background-color: #93cb52;
   color: #000; }
+
+.btn--dark {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #93cb52; }
