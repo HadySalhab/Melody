@@ -1,0 +1,21 @@
+body {
+	font-family: "Roboto";
+	font-weight: 200;
+	line-height: 1.7;
+	box-sizing: border-box;
+}
+
+.heading-primary {
+	color: $color-white;
+	font-size: 8rem;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: 0.5rem;
+}
+
+.heading-quarternary {
+	color: $color-white;
+	font-size: 3rem;
+	font-weight: 300;
+	text-align: center;
+}
