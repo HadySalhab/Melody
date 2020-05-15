@@ -1,0 +1,22 @@
+.instrument {
+	display: flex;
+	&__details {
+		text-align: center;
+		padding: 0 1.5rem;
+	}
+	&__icon {
+		width: 100px;
+		height: 100px;
+		fill: $color-primary;
+		margin-bottom: 0.5rem;
+	}
+
+	&__title {
+		font-size: 3rem;
+		font-weight: 100;
+	}
+	&__text {
+		display: inline-block;
+		font-size: 1.5rem;
+	}
+}
