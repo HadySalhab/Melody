@@ -157,4 +157,24 @@ body {
     font-size: 1.5rem; }
 
 .section-instruments {
-  padding: 1rem 0rem 5rem 0; }
+  padding: 5rem 0rem 10rem 0; }
+
+.success {
+  display: flex;
+  text-align: center; }
+  .success__container {
+    padding-top: 4rem;
+    height: 25rem;
+    background-color: #cccccc;
+    flex: 1; }
+    .success__container:nth-child(even) {
+      background-color: #efefef; }
+  .success__image {
+    height: 8rem;
+    width: 8rem; }
+  .success__title {
+    font-weight: 100;
+    font-size: 3rem; }
+  .success__text {
+    font-size: 3rem;
+    font-weight: 400; }
