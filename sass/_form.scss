@@ -1,0 +1,33 @@
+.form {
+	&-text {
+		flex: 0 0 63%;
+		h1 {
+			font-weight: 700;
+			font-size: 5rem;
+		}
+		p {
+			font-size: 1.7rem;
+		}
+	}
+	margin-left: 4rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 5rem) 12rem;
+	grid-gap: 1rem;
+	width: 100%;
+	input {
+		background-color: white;
+		padding-left: 1rem;
+		border: 1px solid #4f6338;
+	}
+
+	textarea {
+		background-color: white;
+		padding-left: 0.5rem;
+		border: 1px solid #4f6338;
+		padding-left: 1rem;
+		padding-top: 1rem;
+		grid-column: 1/-1;
+		grid-row: 3 / -1;
+	}
+}

@@ -1,0 +1,16 @@
+.about {
+	position: absolute;
+	bottom: 0%;
+	margin-bottom: 3rem;
+	z-index: 2;
+	&__title {
+		color: white;
+		font-weight: 700;
+		font-size: 5rem;
+	}
+	&__text {
+		color: white;
+		font-size: 1.7rem;
+		width: 50%;
+	}
+}
