@@ -177,7 +177,8 @@ body {
   padding: 5rem 0rem 10rem 0; }
 
 .section-classes {
-  padding: 5rem 0rem 10rem 0; }
+  padding: 5rem 0rem 10rem 0;
+  background-color: #efefef; }
 
 .section-about {
   background: url("../img/header-2.jpg") center bottom/cover no-repeat;
@@ -201,6 +202,9 @@ body {
 .section-contact {
   padding: 5rem 0rem 5rem 0; }
 
+.section-sponsors {
+  padding: 5rem 0; }
+
 .footer {
   padding: 2rem 0;
   background-color: rgba(0, 0, 0, 0.8);
@@ -218,7 +222,7 @@ body {
     background-color: #cccccc;
     flex: 1; }
     .success__container:nth-child(even) {
-      background-color: #efefef; }
+      background-color: #f5f5f5; }
   .success__image {
     height: 8rem;
     width: 8rem; }
@@ -292,6 +296,16 @@ body {
     justify-self: center; }
   .class:not(:last-child) {
     margin-bottom: 5rem; }
+
+.sponsors {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.sponsor {
+  margin-right: 5rem; }
+  .sponsor img {
+    width: 20rem; }
 
 .contact {
   padding: 4rem 0;

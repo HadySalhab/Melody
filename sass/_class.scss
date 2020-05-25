@@ -27,3 +27,15 @@
 		margin-bottom: 5rem;
 	}
 }
+.sponsors {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.sponsor {
+	img {
+		width: 20rem;
+	}
+
+	margin-right: 5rem;
+}
