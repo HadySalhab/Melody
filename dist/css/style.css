@@ -247,7 +247,7 @@ body {
   margin-left: 4rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 5rem) 12rem;
+  grid-template-rows: repeat(3, 5rem) 15rem;
   grid-gap: 1rem;
   width: 100%; }
   .form-text {
