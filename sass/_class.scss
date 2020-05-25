@@ -5,12 +5,37 @@
 	justify-items: flex-start;
 	grid-column-gap: 3rem;
 	padding-top: 1rem;
+
+	@media only screen and (max-width: $bp-md) {
+		grid-template-columns: 35% 50%;
+		grid-template-rows: 20rem 10rem;
+		justify-content: center;
+		grid-row-gap: 3rem;
+		margin-bottom: 0rem;
+	}
+	@media only screen and (max-width: $bp-sm) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 3rem;
+	}
 	&__image {
 		width: 100%;
 		height: 20rem;
+		@media only screen and (max-width: $bp-sm) {
+			width: 100%;
+			height: auto;
+		}
 	}
 	&__details {
 		font-size: 2rem;
+		@media only screen and (max-width: $bp-md) {
+			font-size: 1.7rem;
+		}
+		@media only screen and (max-width: $bp-sm) {
+			margin-bottom: 3rem;
+			margin-top: 3rem;
+		}
 		i {
 			color: $color-primary;
 		}
@@ -23,9 +48,8 @@
 	&__read-more {
 		justify-self: center;
 	}
-	&:not(:last-child) {
-		margin-bottom: 5rem;
-	}
+
+	margin-bottom: 5rem;
 }
 .sponsors {
 	display: flex;
@@ -35,7 +59,11 @@
 .sponsor {
 	img {
 		width: 20rem;
+		@media only screen and (max-width: $bp-md) {
+			width: 15rem;
+		}
+		@media only screen and (max-width: $bp-sm) {
+			width: 10rem;
+		}
 	}
-
-	margin-right: 5rem;
 }

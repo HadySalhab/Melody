@@ -1,6 +1,31 @@
 .form {
+	margin-left: 4rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 5rem) 15rem;
+	grid-gap: 1rem;
+	width: 100%;
+
+	@media only screen and (max-width: $bp-lg) {
+		width: auto;
+		margin-left: 12rem;
+	}
+	@media only screen and (max-width: $bp-md) {
+		margin-left: 0rem;
+	}
+	@media only screen and (max-width: $bp-sm) {
+		display: block;
+		margin-top: 2rem;
+	}
+
 	&-text {
 		flex: 0 0 63%;
+		@media only screen and (max-width: $bp-lg) {
+			flex: 0 0 50%;
+		}
+		@media only screen and (max-width: $bp-sm) {
+			text-align: center;
+		}
 		h1 {
 			font-weight: 700;
 			font-size: 5rem;
@@ -9,16 +34,16 @@
 			font-size: 1.7rem;
 		}
 	}
-	margin-left: 4rem;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(3, 5rem) 15rem;
-	grid-gap: 1rem;
-	width: 100%;
+
 	input {
 		background-color: white;
 		padding-left: 1rem;
 		border: 1px solid #4f6338;
+		@media only screen and (max-width: $bp-sm) {
+			width: 100%;
+			padding: 1.2rem;
+			margin-bottom: 1rem;
+		}
 	}
 
 	textarea {
@@ -29,5 +54,16 @@
 		padding-top: 1rem;
 		grid-column: 1/-1;
 		grid-row: 3 / -1;
+		@media only screen and (max-width: $bp-sm) {
+			width: 100%;
+			height: 20rem;
+		}
+	}
+}
+
+.contact-form-container {
+	display: flex;
+	@media only screen and (max-width: $bp-sm) {
+		flex-direction: column;
 	}
 }

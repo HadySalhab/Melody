@@ -1,8 +1,16 @@
 .instrument {
 	display: flex;
+	@media only screen and (max-width: $bp-sm) {
+		flex-direction: column;
+	}
 	&__details {
 		text-align: center;
 		padding: 0 1.5rem;
+		@media only screen and (max-width: $bp-sm) {
+			&:not(:last-child) {
+				margin-bottom: 5rem;
+			}
+		}
 	}
 	&__icon {
 		width: 100px;

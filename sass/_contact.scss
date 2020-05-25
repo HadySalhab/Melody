@@ -1,9 +1,22 @@
 .contact {
+	&-container {
+		display: flex;
+		@media only screen and (max-width: $bp-sm) {
+			flex-direction: column;
+		}
+	}
 	padding: 4rem 0;
 	text-align: center;
 	width: 30%;
+	@media only screen and (max-width: $bp-sm) {
+		width: 100%;
+		&:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+	}
 	background-color: $color-primary;
 	color: rgba($color-black, 0.8);
+
 	&:nth-child(odd) {
 		background-color: rgba($color-black, 0.8);
 		color: white;

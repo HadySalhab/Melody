@@ -2,13 +2,23 @@
 	padding: 5rem 0rem 10rem 0;
 }
 .section-classes {
-	padding: 5rem 0rem 10rem 0;
+	padding: 5rem 0rem 1rem 0rem;
 	background-color: #efefef;
+	@media only screen and (max-width: $bp-md) {
+		padding: 5rem 0rem 0rem 0rem;
+	}
 }
 .section-about {
 	background: url("../img/header-2.jpg") center bottom/cover no-repeat;
 	height: 60vh;
 	position: relative;
+	@media only screen and (max-width: $bp-lg) {
+		height: 30vh;
+	}
+	@media only screen and (max-width: $bp-sm) {
+		height: auto;
+		padding-bottom: 4rem;
+	}
 
 	&::after {
 		position: absolute;
@@ -25,6 +35,9 @@
 	background-color: $color-primary;
 	position: relative;
 	padding: 5rem 0;
+	@media only screen and (max-width: $bp-sm) {
+		padding: 2rem 0rem 4rem 0;
+	}
 }
 .section-contact {
 	padding: 5rem 0rem 5rem 0;
